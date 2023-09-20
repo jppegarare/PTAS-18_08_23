@@ -4,20 +4,18 @@ html{
 }
 
 body{
-    background-color: rgb(168, 127, 13);
-    font-family: 'Rancho', cursive;
+    background-color: #006691;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header img{
-    vertical-align: middle;
-}
+
 
 header{
     font-size: 46px;
-    color: white;
-    background-color: #959713;
+    color: #cdffff;
+    background-color: #2499c7;
     padding: 10px 40px;
     text-align: center;
 }
@@ -39,13 +37,7 @@ nav li{
     padding-right: 50px;
 }
 
-footer{
-    font-size: 22px;
-    color: white;
-    background-color:#959713 ;
-    padding: 10px 40px;
-    text-align: center;
-}
+
 
 main{
     display: flex;
@@ -56,12 +48,13 @@ main{
 
 .card{
     margin: 30px;
-    background-color: rgb(250, 210, 101);
+    background-color: #94e7ff;
     border: 1px solid #f46647;
     display: inline-block;
     overflow: hidden;
-    height: 350px;
+    height: 250px;
     width: 250px;
+    text-align: center;
 
 }
 
