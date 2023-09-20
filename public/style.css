@@ -47,13 +47,13 @@ main{
 }
 
 .card{
-    margin: 30px;
+    margin: 50px;
     background-color: #94e7ff;
     border: 2px solid #40cfff;
     display: inline-block;
     overflow: hidden;
     height: 280px;
-    width: 250px;
+    width: 280px;
     text-align: center;
 
 }
@@ -74,8 +74,3 @@ main{
     height: 165px;
 }
 
-.churros{
-    margin: 50px;
-    height: 50%;
-    width: 50%;
-}
