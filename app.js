@@ -6,11 +6,11 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render('index', { message: 'Eaiii pessoal tudo beemmmm?' });
+  res.render('index', { message: 'Ola' });
 });
 
-app.get('/views', (req, res) => {
-  res.render('contatos', { message: 'Vesh' });
+app.get('/contatos', (req, res) => {
+  res.render('contatos', { message: 'Oi' });
 });
 
 app.listen(port, () => {
