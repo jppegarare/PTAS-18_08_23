@@ -9,8 +9,8 @@ app.get('/', (req, res) => {
   res.render('index', { message: 'Ola' });
 });
 
-app.get('/produtos', (req, res) => {
-  res.render('produtos', { message: 'Oi' });
+app.get('/contatos', (req, res) => {
+  res.render('contatos', { message: 'Oi' });
 });
 
 app.listen(port, () => {
