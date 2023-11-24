@@ -10,14 +10,18 @@
   </header>
 
   <main>
-    <div class="card">
-      <a href="http://localhost:3000/contatos"><img src="/chocolate.png" alt="foto bolo-chocolate"></a>
-        
-        <h2>Bolo de Chocolate</h2>
-        <p>R$ 50,00</p>
-    </div>
+    <% for (let produto of produtos) {%>
+      <div class="card">
+        <a href="http://localhost:3000/contatos"><img src="<%= produto.imagem %>" alt="foto bolo-chocolate"></a>
+          
+          <h2><%= produto.nome %></h2>
+          <h3><%= produto.descricao %></h3>
+          <p><%= produto.preco %></p>
+      </div>
+      
+    <% } %>
 
-    <div class="card">
+    <!-- <div class="card">
       <a href="http://localhost:3000/contatos"><img src="/limao.png" alt="foto bolo-churros"></a>
         <h2>Bolo de Limão</h2>
         <p>R$ 40,00</p>
@@ -63,7 +67,7 @@
       <a href="http://localhost:3000/contatos"><img src="/abacaxi.png" alt="foto rocambole"></a>
       <h2>Bolo de Abacaxi</h2>
       <p>R$ 30,00</p>
-  </div>
+  </div> -->
 
   </main>
 

@@ -52,8 +52,8 @@ main{
     border: 2px solid #40cfff;
     display: inline-block;
     overflow: hidden;
-    height: 280px;
-    width: 280px;
+    height: 350px;
+    width: 380px;
     text-align: center;
 
 }
@@ -64,7 +64,7 @@ main{
 }
 
 .card p{
-    padding: 5px;
+    padding: px;
     margin: 0;
     font-size: 18px;
 }

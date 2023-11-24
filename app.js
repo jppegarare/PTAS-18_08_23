@@ -18,7 +18,14 @@ const produtos = [
   {id: 10, nome: "nome", preco: "40", descricao: "descricao", imagem: "/chocolate.png"}
 ]
 
+function buscarProduto(id){
+  const produto = produto.find(produto => produto.id == id)
+  return produto || null
+}
 
+app.get('/', async function (req, res){
+  res.render("index", {produtos})
+})
 
 app.get('/', (req, res) => {
   res.render('index', { message: 'Ola' });
