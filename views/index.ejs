@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Projeto Express e EJS</title>
+  <title>Sodie | Bolos</title>
   <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <main>
     <% for (let produto of produtos) {%>
       <div class="card">
-        <a href="http://localhost:3000/contatos"><img src="<%= produto.imagem %>" alt="foto bolo-chocolate"></a>
+        <a href="/produtos/<%= produto.id %>"><img src= "<%= produto.imagem %>" alt="foto bolo-chocolate"></a>
           
           <h2><%= produto.nome %></h2>
           <h3><%= produto.descricao %></h3>

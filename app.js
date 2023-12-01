@@ -15,24 +15,21 @@ const produtos = [
   {id: 7, nome: "Bolo de Banana", preco: "R$ 25,00", descricao: "Um bolo delicioso para comer em 1 dia", imagem: "/banana.png"},
   {id: 8, nome: "Bolo de Laranja", preco: "R$ 35,00", descricao: "Um bolo delicioso para comer em 1 dia", imagem: "/laranja.png"},
   {id: 9, nome: "Bolo de Abacaxi", preco: "R$ 30,00", descricao: "Um bolo delicioso para comer em 1 dia", imagem: "/abacaxi.png"},
-  {id: 10, nome: "nome", preco: "40", descricao: "descricao", imagem: "/chocolate.png"}
+  {id: 10, nome: "Bolo de Chocolate Vegano", preco: "R$ 90,00", descricao: "Um bolo delicioso para comer em 1 dia", imagem: "/bolo_chocolate_vegano.png"}
 ]
 
 function buscarProduto(id){
-  const produto = produto.find(produto => produto.id == id)
+  const produto = produtos.find(produto => produto.id == id)
   return produto || null
 }
 
-app.get('/', async function (req, res){
-  res.render("index", {produtos})
+app.get('/', function (req, res){
+  res.render("index", { produtos })
 })
 
-app.get('/', (req, res) => {
-  res.render('index', { message: 'Ola' });
-});
-
-app.get('/contatos', (req, res) => {
-  res.render('contatos', { message: 'Oi' });
+app.get('/produtos/:id', (req, res) => {
+  const produto = buscarProduto(req.params.id)
+  res.render('produtos', { produto })
 });
 
 app.listen(port, () => {
